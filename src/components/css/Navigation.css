@@ -1,0 +1,19 @@
+.nav-link {
+  color: #135E4B; /* Forest Green */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #4CB572; /* Vibrant Green */
+}
+
+.nav-link.active {
+  color: #4CB572 !important; /* Mint Green */
+  text-decoration: underline;
+  text-decoration-color: #4CB572;
+
+}
