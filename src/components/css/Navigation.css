@@ -17,3 +17,16 @@
   text-decoration-color: #4CB572;
 
 }
+
+.navbar-logo {
+  /* Add specific styles for your logo here */
+  margin-right: 0px; /* Example: Add some spacing */
+  max-width: 50px;
+  height: auto;
+  /* margin-bottom: 1rem; */
+}
+
+.navitem-logo{
+    max-width: 70px;
+
+}

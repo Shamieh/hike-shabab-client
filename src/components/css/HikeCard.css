@@ -1,0 +1,58 @@
+.hike-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 4%;
+  background-color: #f8f9fa;
+}
+
+/* Card Styling */
+.hike-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(19, 94, 75, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.hike-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(19, 94, 75, 0.2);
+}
+
+/* Image Control */
+.hike-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Card Content */
+.hike-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #135E4B;
+  margin-bottom: 0.5rem;
+}
+
+.hike-card-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+/* Button */
+.hike-card-btn {
+  background-color: #4CB572;
+  border: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hike-card-btn:hover {
+  background-color: #43a264;
+  transform: translateY(-2px);
+}

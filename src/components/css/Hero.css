@@ -1,0 +1,149 @@
+/* Hero Section Styles */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(19, 94, 75, 0.8) 0%, 
+    rgba(19, 94, 75, 0.6) 50%, 
+    rgba(76, 181, 114, 0.4) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  z-index: 3;
+  position: relative;
+}
+
+.hero-subtitle {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  z-index: 3;
+  position: relative;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  z-index: 3;
+  position: relative;
+}
+
+.btn-explore {
+  background-color: #4CB572;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 181, 114, 0.4);
+}
+
+.btn-explore:hover {
+  background-color: #43a264;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(76, 181, 114, 0.6);
+}
+
+.btn-learn {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-learn:hover {
+  background-color: #ffffff;
+  color: #135E4B;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+}
+
+
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  
+  .btn-explore,
+  .btn-learn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Animation for when hero loads */
+.hero-title,
+.hero-subtitle,
+.hero-buttons {
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.hero-buttons {
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
