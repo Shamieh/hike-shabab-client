@@ -46,17 +46,25 @@ color: #ffffff;
   line-height: 1.2;
   z-index: 3;
   position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .about-us-subtitle {
   color: #135E4B;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
   line-height: 1.6;
   z-index: 3;
   position: relative;
+    text-align: left;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
+
+
 
 
 @media (max-width: 480px) {
