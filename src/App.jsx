@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Register from './components/Register'
 import AboutUs from './components/AboutUs'
+import Tips from './components/Tips'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
       <Navigation/>
 
-      <AboutUs/>
+      <Tips/>
       <Footer/>
     </>
   )

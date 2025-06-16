@@ -34,6 +34,8 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .hero-title {
@@ -45,6 +47,8 @@
   line-height: 1.2;
   z-index: 3;
   position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .hero-subtitle {
@@ -56,6 +60,8 @@
   line-height: 1.6;
   z-index: 3;
   position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .hero-buttons {

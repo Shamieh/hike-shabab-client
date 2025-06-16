@@ -1,0 +1,62 @@
+.tips-container { 
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+/* 2. Main page title (e.g., "🥾 Hiking Tips") */
+.main-title { /* Renamed from .page-title */
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+/* Emojis in titles */
+.main-title span[role="img"],
+.section-title span[role="img"] {
+  margin-right: 15px;
+}
+
+/* 3. Section grouping (e.g., "Pre-Hike Checklists" block) */
+.section { /* Renamed from .tips-section for simplicity */
+  margin-bottom: 3.5rem;
+}
+
+/* 4. Section titles (e.g., "✅ Pre-Hike Checklists") */
+.section-title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+/* Direct targeting for sub-section titles (h3) within the page */
+.page-container h3 { /* Target h3 only within the page container */
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+/* Direct targeting for paragraphs (p) within the page */
+.page-container p { /* Target p only within the page container */
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+h1{
+    text-align: center;
+    color:  #135E4B;
+}
+h3{
+    color:  #135E4B;
+
+}
