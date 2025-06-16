@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Login from './components/Login'
 import Register from './components/Register'
+import AboutUs from './components/AboutUs'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
       <Navigation/>
 
-      <Home/>
+      <AboutUs/>
       <Footer/>
     </>
   )

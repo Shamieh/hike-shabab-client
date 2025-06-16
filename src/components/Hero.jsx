@@ -6,7 +6,7 @@ import './css/Hero.css';
 const Home = () => {
   return (
     <section className="hero-section">
-      {/* Background Image */}
+      
       <img 
         src="/hero-bg.png" 
         alt="Jordan hiking landscape" 
