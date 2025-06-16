@@ -5,6 +5,12 @@ import './css/Navigation.css'
 function Navigation() {
   return (
     <Nav justify variant="tabs" defaultActiveKey="/home">
+      
+      <Nav.Item className='navitem-logo'>
+        
+         <img src="logo.png" className='navbar-logo' />
+        
+      </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/home">Home</Nav.Link>
       </Nav.Item>

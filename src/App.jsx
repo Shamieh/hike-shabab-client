@@ -13,13 +13,13 @@ function App() {
 
   return (
     <>
-    <Register/>
-
-
-      {/* <Navigation/>
-
     
-      <Footer/> */}
+
+
+      <Navigation/>
+
+      <Home/>
+      <Footer/>
     </>
   )
 }
