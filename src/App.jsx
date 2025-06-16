@@ -5,15 +5,20 @@ import './App.css'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import Login from './components/Login'
+
 
 function App() {
 
   return (
     <>
-      <Navigation/>
+    <Login/>
 
 
-      <Footer/>
+      {/* <Navigation/>
+
+    
+      <Footer/> */}
     </>
   )
 }
