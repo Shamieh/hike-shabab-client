@@ -21,7 +21,7 @@ It supports both *users* (to explore & reserve hikes) and *admins* (to schedule 
 ## 📁 Project Structure
 
 
-
+```
 HikeShabab/
 │
 ├── server/               # Express + PostgreSQL backend
@@ -38,7 +38,7 @@ HikeShabab/
 │   └── main.jsx          # Entry point
 │
 └── README.md             # You’re here!
-
+```
 
 
 ---
@@ -59,49 +59,49 @@ Auth is stored in *localStorage* for now (JWT optional).
 ## 🧰 Backend Setup
 
 ### 1. Navigate to server folder
-bash
+```bash
 cd server
-`
+```
 
 ### 2. Install dependencies
 
-bash
+```bash
 npm install
-
+```
 
 ### 3. Create Database (using pgAdmin or CLI)
 
-bash
+```bash
 CREATE DATABASE hikeshabab;
-
+```
 
 ### 4. Apply Schema & Seed Data
 
-bash
+```bash
 psql -U postgres -d hikeshabab -f schema.sql
 psql -U postgres -d hikeshabab -f data.sql
-
+```
 
 OR use pgAdmin GUI to run both schema.sql and data.sql
 
 ### 5. Create .env file
-bash
+```bash
 env
 DATABASE_URL=postgresql://postgres:0000@localhost:5432/hikeshabab
 PORT=3001
-
+```
 
 
 ### 6. Run the server
 
-bash
+```bash
 npm run dev
-
+```
 
 Backend runs on:
 
 
-http://localhost:3001
+`http://localhost:3001`
 
 
 ---
@@ -110,32 +110,33 @@ http://localhost:3001
 
 ### 1. Navigate to client folder
 
-bash
+```bash
 cd client
-
+```
 
 ### 2. Install dependencies
 
-bash
+```bash
 npm install
-
+```
 
 ### 3. Add .env file (for weather)
 
+```bash
 env
 VITE_WEATHER_API_KEY=your_weatherapi_key
-
+```
 
 ### 4. Run React App
 
-bash
+```bash
 npm run dev
-
+```
 
 Runs on:
 
 
-http://localhost:5173
+`http://localhost:5173`
 
 
 ---
