@@ -1,25 +1,28 @@
-import React from 'react';
-import  Hero from './Hero';
-import  HikeCard from './HIkeCard';
+import React, { useEffect, useState } from 'react';
+import Hero from './Hero';
+import HikeCard from './HikeCard';
+import axios from 'axios';
 import './css/HikeCard.css';
 
-
-
 const Home = () => {
-    return (
-        <div>
-            <Hero/>
-            <div className='hike-grid'>
+  const [hikes, setHikes] = useState([]);
 
-            <HikeCard/>
-            <HikeCard/>
-            <HikeCard/>
-            </div>
+  useEffect(() => {
+    axios.get("http://localhost:3001/api/hikes")
+      .then(res => setHikes(res.data))
+      .catch(() => setHikes([]));
+  }, []);
 
-
-
-        </div>
-    );
-}
+  return (
+    <div>
+      <Hero />
+      <div className="hike-grid">
+        {hikes.map(hike => (
+          <HikeCard key={hike.id} hike={hike} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Home;

@@ -1,22 +1,21 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import './css/HikeCard.css';
+import { useNavigate } from 'react-router-dom';
 
-function HikeCard() {
+function HikeCard({ hike }) {
+  const navigate = useNavigate();
+
+  const hikeId = hike.schedule_id || hike.id; // fallback in case data comes from different structure
+
   return (
     <Card className="hike-card">
-      <Card.Img
-        variant="top"
-        src="/hasa.jpg"
-        alt="Wadi Al-Hasa"
-        className="hike-card-img"
-      />
+      <Card.Img variant="top" src={hike.image_url} />
       <Card.Body>
-        <Card.Title className="hike-card-title">Wadi Al-Hasa</Card.Title>
-        <Card.Text className="hike-card-text">
-          Explore the longest valley in Jordan with water trails and majestic views.
-        </Card.Text>
-        <Button className="hike-card-btn">More Details</Button>
+        <Card.Title>{hike.name}</Card.Title>
+        <Card.Text>{hike.description}</Card.Text>
+        <Button className="hike-card-btn" onClick={() => navigate(`/hike/${hikeId}`)}>
+          More Details
+        </Button>
       </Card.Body>
     </Card>
   );
