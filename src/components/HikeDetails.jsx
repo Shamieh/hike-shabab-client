@@ -50,7 +50,10 @@ const HikeDetails = () => {
       .then(() => alert("✅ Hike reserved!"))
       .catch((err) => {
         if (err.response?.data?.message) {
+
+
           alert("⚠️ " + err.response.data.message);
+ 
         } else {
           alert("❌ Reservation failed.");
         }
@@ -94,4 +97,6 @@ const HikeDetails = () => {
   );
 };
 
+
 export default HikeDetails;
+
