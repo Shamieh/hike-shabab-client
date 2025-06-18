@@ -14,19 +14,26 @@
 .nav-link.active {
   color: #4CB572 !important; /* Mint Green */
   text-decoration: underline;
-  text-decoration-color: #4CB572;
-
+  background: #fff !important;
+  
 }
 
 .navbar-logo {
   /* Add specific styles for your logo here */
-  margin-right: 0px; /* Example: Add some spacing */
+  margin: 8px; /* Example: Add some spacing */
   max-width: 50px;
   height: auto;
+  border-radius: 5px;
   /* margin-bottom: 1rem; */
 }
 
 .navitem-logo{
     max-width: 70px;
 
+}
+
+.nav-link.active {
+  color: #135E4B !important;
+  font-weight: bold;
+  border-bottom: 2px solid #4CB572;
 }
