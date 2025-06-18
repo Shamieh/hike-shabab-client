@@ -1,0 +1,35 @@
+.myhikes-container {
+  padding: 40px;
+}
+.subtitle {
+  color: #4cb572;
+  margin-bottom: 30px;
+}
+.hike-card-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.hike-card-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.hike-card-info {
+  flex: 1;
+}
+.hike-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.no-hikes-msg {
+  color: gray;
+  font-style: italic;
+}

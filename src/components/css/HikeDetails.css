@@ -1,0 +1,96 @@
+.hike-details-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hike-title {
+  font-size: 2.5rem;
+  color: #135E4B;
+  margin-bottom: 20px;
+}
+
+.hike-meta {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hike-info{
+    text-align: center;
+}
+.hike-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.hike-info li {
+  margin-bottom: 10px;
+}
+
+.hike-img img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.hike-description {
+  margin-top: 40px;
+}
+
+.hike-description h3 {
+  color: #135E4B;
+  margin-bottom: 15px;
+}
+
+.hike-description p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hike-actions {
+  margin-top: 30px;
+}
+
+.hike-card-btn {
+  background-color: #4CB572;
+  border: none;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hike-card-btn:hover {
+  background-color: #43a264;
+  transform: translateY(-2px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hike-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hike-img img {
+    width: 100%;
+  }
+
+  .hike-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+}
