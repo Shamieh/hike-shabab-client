@@ -37,9 +37,7 @@ const MyHikes = () => {
               <p>Date & Time: {new Date(hike.date).toLocaleDateString()} at {hike.time}</p>
             </div>
             <div className="hike-card-buttons">
-              <Button variant="success" onClick={() => window.location.href = `/hike/${hike.schedule_id}`}>
-                View Details
-              </Button>
+              
               <Button variant="danger" onClick={() => cancelReservation(hike.id)}>
                 Cancel Reservation
               </Button>
