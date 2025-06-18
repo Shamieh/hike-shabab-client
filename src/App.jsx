@@ -8,7 +8,6 @@ import Home from './components/Home';
 import Tips from './components/Tips';
 import AboutUs from './components/AboutUs';
 import HikeDetails from './components/HikeDetails';
-import AdminDashboard from './components/AdminDashboard';
 import MyHikes from './components/MyHikes';
 
 function App() {
